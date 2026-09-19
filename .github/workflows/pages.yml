@@ -1,6 +1,6 @@
-# Deploy the NOVA website folder to GitHub Pages.
+﻿# Deploy the NOVA website folder to GitHub Pages.
 # Push to `main` and the site goes live at  https://YOURUSERNAME.github.io/nova/
-# (When you register the .com at Cloudflare, see DEPLOY.md — add CNAME + set the domain, Pages keeps HTTPS free.)
+# (When you register the .com at Cloudflare, see DEPLOY.md â€” add CNAME + set the domain, Pages keeps HTTPS free.)
 name: Deploy NOVA site
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
       - name: Upload website as Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: website
+          path: .
       - name: Deploy to GitHub Pages
         id: pages
         uses: actions/deploy-pages@v4
