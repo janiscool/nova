@@ -49,7 +49,7 @@ function renderPrice(){
   $('#pay').onclick=e=>{e.preventDefault();buy('paypal')};
   $('#idb').onclick=e=>{e.preventDefault();buy('ideal')};
 }
-function buy(kind){const c=CFG.payments||{};const u=(kind==='ideal'?c.ideal_url:c.paypal_url);if(u){openInNew(u);return}toast('Checkout link is connected once the payment provider is linked in web-config.json. During beta, PRO is free — just sign in.')}
+function buy(kind){const c=CFG.payments||{};const u=(kind==='ideal'?c.ideal_url:c.paypal_url);if(u){openInNew(u);return}toast(kind==='ideal'||kind==='wero'?'#Wero (iDEAL) is coming soon — right now PayPal is the only way to pay.':'Pay with PayPal — #Wero (iDEAL) arrives soon.')}
 function openInNew(u){const w=window.open(u,'_blank','noopener');if(!w)location.href=u}
 function toast(m){let t=$('#toast');if(!t){t=document.createElement('div');t.id='toast';document.body.appendChild(t)}t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('on'),3200)}
 /* ---------- currency button + menu ---------- */
