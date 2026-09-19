@@ -1,0 +1,59 @@
+﻿{
+    "site":  {
+                 "name":  "NOVA Â· Flight Copilot for MSFS 2024",
+                 "email":  "janwijker13@gmail.com",
+                 "owner":  {
+                               "name":  "Jan Wijker",
+                               "age":  18,
+                               "country":  "Netherlands",
+                               "solo":  true,
+                               "beta":  true,
+                               "versions_coming":  "More versions, live profiles and charts are shipping soon."
+                           },
+                 "currency_auto":  true,
+                 "currencies":  [
+                                    "EUR",
+                                    "USD",
+                                    "GBP"
+                                ],
+                 "pricing":  {
+                                 "base":  4.99,
+                                 "currency":  "EUR",
+                                 "discount":  {
+                                                  "pct":  20,
+                                                  "label":  "20% OFF LAUNCH"
+                                              },
+                                 "paypal_url":  "https://paypal.me/janwijker13",
+                                 "ideal_url":  "",
+                                 "wero_url":  "",
+                                 "payments":  {
+                                                  "primary":  "paypal",
+                                                  "paypal":  {
+                                                                 "enabled":  true,
+                                                                 "detail":  {
+                                                                                "email":  "janwijker13@gmail.com",
+                                                                                "me":  "paypal.me/janwijker13"
+                                                                            }
+                                                             },
+                                                  "ideal":  {
+                                                                "enabled":  false,
+                                                                "detail":  "Enable after Mollie/Wero merchant is verified. Currently PayPal-only at launch."
+                                                            },
+                                                  "wero":  {
+                                                               "enabled":  false,
+                                                               "detail":  "Same as iDEAL â€” one flag once Wero merchant checkout is live."
+                                                           }
+                                              },
+                                 "deploy":  {
+                                                "host":  "GitHub Pages",
+                                                "repo_owner":  "janiscool",
+                                                "repo":  "nova",
+                                                "domain":  "TBD.COM (you register)",
+                                                "live_url":  "https://janiscool.github.io/nova/",
+                                                "notes":  "Buy the .com at Namecheap/Cloudflare then set DOMAIN in workflow + CNAME; until then the github.io URL works with HTTPS for free."
+                                            },
+                                 "note":  "Beta v1 Â· solo project Â· PayPal + iDEAL (#Wero). One-time, forever. 20% off right now; price only goes up after launch."
+                             }
+             },
+    "ownerProEmail":  "janwijker13@gmail.com"
+}
